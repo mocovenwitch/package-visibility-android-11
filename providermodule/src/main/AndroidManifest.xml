@@ -1,4 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mocoven.providermodule">
 
+    <queries>
+        <package android:name="com.mocoven.app1" />
+        <package android:name="com.mocoven.app2" />
+        <package android:name="com.mocoven.app3" />
+    </queries>
 </manifest>
