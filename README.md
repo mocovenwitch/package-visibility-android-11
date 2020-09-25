@@ -15,7 +15,7 @@ order, apps development targetSdkVersion, running Android OS version, or app sig
 
 ## The problem
 
-`Giving:`
+`Given:`
 - app1 - targetSdkVersion 29
 - app2 - targetSdkVersion 29
 - app3 - targetSdkVersion 30
@@ -46,17 +46,19 @@ Simplest solution is making sure every app defines which apps they would like to
 
 Tested in Android 10 emulator, no behaviour change in below setup regardless the installation order:
 
-`Giving:`
+`Given:`
 - app1 - targetSdkVersion 29
 - app2 - targetSdkVersion 29
 - app3 - targetSdkVersion 30
 - running on device with Android 10 emulator
 
+`Result:` apps are visible to each other
+
 ![android11 visibility](arts/android10.png)
 
 
 
-## Apps that are visible automatically
+## Apps visible automatically
 
 Android [automatically](https://developer.android.com/training/basics/intents/package-visibility#automatic) makes some apps visible to your app so that your app can interact with them without needing to declare the `<queries>` element. For example, any app that accesses a Content Provider in your app. 
 
