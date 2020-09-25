@@ -1,4 +1,4 @@
-# Experiment of Package Visibility on Android 11
+# Experiment of Package Visibility in Android 11
 
 ## Purpose of this Experiment
 
